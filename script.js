@@ -1,7 +1,5 @@
 
 document.getElementById("ano").textContent = new Date().getFullYear();
- 
-// Destaca no menu a seção que está visível na tela
 const links = document.querySelectorAll("nav a");
 const secoes = [...links].map(a => document.querySelector(a.getAttribute("href")));
 const obs = new IntersectionObserver(entradas => {
